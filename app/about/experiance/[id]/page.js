@@ -1,3 +1,4 @@
+import Button from '@/app/components/Button';
 import React from 'react'
 
 export default function ExperianceDetails({params}) {
@@ -6,6 +7,7 @@ export default function ExperianceDetails({params}) {
   return (
     <div>
       this is {id}
+      <Button></Button>
     </div>
   )
 }
