@@ -1,22 +1,10 @@
+import GetAllPosts from '@/lib/GetAllPosts'
 import Link from 'next/link'
 import React from 'react'
 
-export default function Experiance() {
+export default async function Experiance() {
 
-    const experiances= [
-        {
-            id : 1,
-            title : "Work Experiance",
-            description : "Wrking Since September "
-
-        },
-         {
-            id : 2,
-            title : "Educational Experiance",
-            description : "Wrking Since September "
-
-        }
-    ];
+    const experiances= await GetAllPosts();
 
   return (
     <div>
