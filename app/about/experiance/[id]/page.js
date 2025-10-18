@@ -23,7 +23,7 @@ export default async function ExperianceDetails({params}) {
   const commentsPromise =  GetPostComment(id);
 
   // const [experiance,comments] =await  Promise.all([experiancePromise,commentsPromise])
-   const experiance = await experiancePromise;
+  const experiance = await experiancePromise;
 
   return (
     <div>
